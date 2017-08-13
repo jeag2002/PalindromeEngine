@@ -27,7 +27,7 @@ public class Main {
 		}else if (data.length >= 1){
 			String inputData = data[0];
 			if (inputData.length() >= 2){
-				pEngine.processPalyndrome(inputData);
+				pEngine.processPalindrome(inputData);
 			}else{
 				System.out.println("WARN - data (" + inputData + ") have less of minimum size");
 			}

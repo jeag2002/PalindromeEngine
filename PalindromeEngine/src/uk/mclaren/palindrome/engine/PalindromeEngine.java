@@ -6,7 +6,7 @@ import uk.mclaren.palindrome.bean.PalindromeBean;
 
 public class PalindromeEngine {
 	
-	private static final int MAX_NUM_PALiNDROMES = 3;
+	private static final int MAX_NUM_PALYNDROMES = 3;
 	
 	private ArrayList<PalindromeBean> palindromeAlreadyFound;
 	private int numPalMax;
@@ -14,7 +14,7 @@ public class PalindromeEngine {
 	public PalindromeEngine(){
 		super();
 		palindromeAlreadyFound = new ArrayList<PalindromeBean>();
-		numPalMax = MAX_NUM_PALiNDROMES;
+		numPalMax = MAX_NUM_PALYNDROMES;
 	}
 	
 	public PalindromeEngine(int _numPalMax){
@@ -109,7 +109,7 @@ public class PalindromeEngine {
 	 */
 	
 	public void clear(){
-		numPalMax = MAX_NUM_PALiNDROMES;
+		numPalMax = MAX_NUM_PALYNDROMES;
 		palindromeAlreadyFound.clear();
 	}
 	

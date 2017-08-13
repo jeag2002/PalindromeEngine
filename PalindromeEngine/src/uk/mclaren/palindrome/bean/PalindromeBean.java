@@ -9,8 +9,8 @@ public class PalindromeBean {
 		palindrome = "";
 	}
 	
-	public PalindromeBean(String _palindrome){
-		palindrome = _palindrome;
+	public PalindromeBean(String _palyndrome){
+		palindrome = _palyndrome;
 	}
 	
 	public void clear(){
@@ -21,8 +21,8 @@ public class PalindromeBean {
 		return palindrome;
 	}
 
-	public void setPalindrome(String palindrome) {
-		this.palindrome = palindrome;
+	public void setPalindrome(String palyndrome) {
+		this.palindrome = palyndrome;
 	}
 	
 	
