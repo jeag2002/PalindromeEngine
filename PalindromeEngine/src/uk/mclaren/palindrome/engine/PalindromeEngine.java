@@ -6,50 +6,50 @@ import uk.mclaren.palindrome.bean.PalindromeBean;
 
 public class PalindromeEngine {
 	
-	private static final int MAX_NUM_PALYNDROMES = 3;
+	private static final int MAX_NUM_PALiNDROMES = 3;
 	
-	private ArrayList<PalindromeBean> palyndromeAlreadyFound;
+	private ArrayList<PalindromeBean> palindromeAlreadyFound;
 	private int numPalMax;
 	
 	public PalindromeEngine(){
 		super();
-		palyndromeAlreadyFound = new ArrayList<PalindromeBean>();
-		numPalMax = MAX_NUM_PALYNDROMES;
+		palindromeAlreadyFound = new ArrayList<PalindromeBean>();
+		numPalMax = MAX_NUM_PALiNDROMES;
 	}
 	
 	public PalindromeEngine(int _numPalMax){
 		super();
-		palyndromeAlreadyFound = new ArrayList<PalindromeBean>();
+		palindromeAlreadyFound = new ArrayList<PalindromeBean>();
 		numPalMax = _numPalMax;
 	}
 	
 	
 	/**
-	 * Processing input string finding palyndromes
+	 * Processing input string finding palindromes
 	 * @param inputData
 	 */
 	
-	public int processPalyndrome(String inputData){
+	public int processPalindrome(String inputData){
 		int numFounds = 0;
 		
 		for(int data=inputData.length(); (data >=2 && numFounds<=numPalMax); data--){
-			numFounds = processPalyndromeSubStr(inputData,data,numFounds);
+			numFounds = processPalindromeSubStr(inputData,data,numFounds);
 		}
 		
-		palyndromeAlreadyFound.clear();
+		palindromeAlreadyFound.clear();
 		return numFounds;
 	}
 	
 	/**
-	 * Processing input string for finding unique palyndromes of "size" length
+	 * Processing input string for finding unique palindromes of "size" length
 	 * @param inputData string case of study
-	 * @param size size of the palyndromes
-	 * @param numFounds number of palyndromes previously found
-	 * @return number of palyndromes founds after processing
+	 * @param size size of the palindromes
+	 * @param numFounds number of palindromes previously found
+	 * @return number of palindromes founds after processing
 	 */
 	
 	
-	public int processPalyndromeSubStr(String inputData, int size, int numFounds){
+	public int processPalindromeSubStr(String inputData, int size, int numFounds){
 		int newFounds = 0;
 		
 		if (numFounds < 3){
@@ -60,13 +60,13 @@ public class PalindromeEngine {
 					int pos = 0;
 					
 					do{						
-						if (isPalyndrome(subdata)){ //is a palyndrome?
-							if (!palyndromeAlreadyFound.contains(new PalindromeBean(subdata))){ //has this palyndrome  been found before? 
-																								//is it part of another palyndrome?
-								if (((newFounds+1)+numFounds) <= numPalMax){ //are there three palyndromes found previously?
+						if (isPalindrome(subdata)){ //is a palindrome?
+							if (!palindromeAlreadyFound.contains(new PalindromeBean(subdata))){ //has this palindrome  been found before? 
+																								//is it part of another palindrome?
+								if (((newFounds+1)+numFounds) <= numPalMax){ //are there three palindromes found previously?
 									System.out.println("Text: " + subdata + ", Index: " + pos + ", Length: " + size);
 									newFounds++;
-									palyndromeAlreadyFound.add(new PalindromeBean(subdata));
+									palindromeAlreadyFound.add(new PalindromeBean(subdata));
 								}
 							}
 						}
@@ -92,12 +92,12 @@ public class PalindromeEngine {
 	}
 
 	/**
-	 * Evaluate if input String is a Palyndrome or not.
+	 * Evaluate if input String is a Palindrome or not.
 	 * @param inputData
 	 * @return
 	 */
 	
-	public boolean isPalyndrome(String inputData){
+	public boolean isPalindrome(String inputData){
 		boolean res = false;
 		inputData = inputData.toLowerCase().replaceAll("\\W","");
 		res = (inputData.equals(new StringBuffer(inputData).reverse().toString()));
@@ -109,12 +109,12 @@ public class PalindromeEngine {
 	 */
 	
 	public void clear(){
-		numPalMax = MAX_NUM_PALYNDROMES;
-		palyndromeAlreadyFound.clear();
+		numPalMax = MAX_NUM_PALiNDROMES;
+		palindromeAlreadyFound.clear();
 	}
 	
 	/**
-	 * Get Max number of palyndromes that the program will be able to found
+	 * Get Max number of palindromes that the program will be able to found
 	 * @return
 	 */
 	public int getNumPalMax() {
@@ -122,7 +122,7 @@ public class PalindromeEngine {
 	}
 	
 	/**
-	 * Set Max number of palyndromes that the program will be able to found
+	 * Set Max number of palindromes that the program will be able to found
 	 * @return
 	 */
 

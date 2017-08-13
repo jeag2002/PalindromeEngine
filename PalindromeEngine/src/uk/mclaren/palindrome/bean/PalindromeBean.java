@@ -2,27 +2,27 @@ package uk.mclaren.palindrome.bean;
 
 public class PalindromeBean {
 	
-	private String palyndrome;
+	private String palindrome;
 
 	public PalindromeBean(){
 		super();
-		palyndrome = "";
+		palindrome = "";
 	}
 	
-	public PalindromeBean(String _palyndrome){
-		palyndrome = _palyndrome;
+	public PalindromeBean(String _palindrome){
+		palindrome = _palindrome;
 	}
 	
 	public void clear(){
-		palyndrome = "";
+		palindrome = "";
 	}
 	
-	public String getPalyndrome() {
-		return palyndrome;
+	public String getPalindrome() {
+		return palindrome;
 	}
 
-	public void setPalyndrome(String palyndrome) {
-		this.palyndrome = palyndrome;
+	public void setPalindrome(String palindrome) {
+		this.palindrome = palindrome;
 	}
 	
 	
@@ -35,7 +35,7 @@ public class PalindromeBean {
 	        return false;
 	    }
 	    final PalindromeBean other = (PalindromeBean) obj;   
-	    return (this.palyndrome.indexOf(other.getPalyndrome())!=-1) || (other.getPalyndrome().indexOf(this.palyndrome)!=-1) ;
+	    return (this.palindrome.indexOf(other.getPalindrome())!=-1) || (other.getPalindrome().indexOf(this.palindrome)!=-1) ;
 	}
 
 	

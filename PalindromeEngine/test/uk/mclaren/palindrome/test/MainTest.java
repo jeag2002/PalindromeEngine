@@ -1,4 +1,4 @@
-package uk.mclaren.palyndrome.test;
+package uk.mclaren.palindrome.test;
 
 import org.junit.Test;
 

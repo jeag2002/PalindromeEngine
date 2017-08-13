@@ -6,7 +6,7 @@ JUnit 4.9
 
 Example of Execution (Windows 10 64Bits Version):
 
-java -jar .\PalindromeEngine-0.0.1-SNAPSHOT.jar uk.mclaren.palyndrome.Main sqrrqabccbatudefggfedvwhijkllkjihxymnnmzpop
+java -jar .\PalindromeEngine-0.0.1-SNAPSHOT.jar uk.mclaren.palindrome.Main sqrrqabccbatudefggfedvwhijkllkjihxymnnmzpop
 
 
 

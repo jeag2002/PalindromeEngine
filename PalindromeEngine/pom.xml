@@ -27,7 +27,7 @@
 		<configuration>
   		<archive>
     		<manifest>
-			<mainClass>uk.maclaren.palyndrome.Main</mainClass>
+			<mainClass>uk.mclaren.palindrome.Main</mainClass>
     		</manifest>
   		</archive>
 		</configuration>
