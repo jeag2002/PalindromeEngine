@@ -19,5 +19,5 @@ Architechture:
 1)Find the three most large palindromes of a input string (of maximum size of 2^31+1 bytes); beginning
 with the size of the string and ending with the size of 2
 
-2)Filter all the palindromes that are "embedded" into other palindromes larger previosly found
+2)Filter all the palindromes that are "embedded" into other palindromes larger previously found
 
